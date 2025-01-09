@@ -1,3 +1,6 @@
+# Añade el número a comprobar.
+my_card_number='4111-1111-4555-1142'
+
 def verify_card_number(card_number):
     sum_of_odd_digits = 0
     card_number_reversed = card_number[::-1]
@@ -16,7 +19,7 @@ def verify_card_number(card_number):
     return total % 10 == 0
 
 def main():
-    card_number = '4111-1111-4555-1142'
+    card_number = my_card_number
     card_translation = str.maketrans({'-': '', ' ': ''})
     translated_card_number = card_number.translate(card_translation)
 
